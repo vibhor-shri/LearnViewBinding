@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">LearnViewBinding</string>
+    <string name="hello">Hello</string>
+    <string name="welcome_to_activity_without_view_binding">Welcome to activity without view binding</string>
+    <string name="press_me">Press Me!</string>
+    <string name="move_to_next_screen">Move to next screen</string>
 </resources>

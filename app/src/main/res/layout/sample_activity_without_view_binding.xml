@@ -4,35 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewBindingActivity">
+    tools:viewBindingIgnore="true">
 
     <TextView
-        android:id="@+id/tv_hello"
+        android:id="@+id/tv_hello_activity_without_view_binding"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="default text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_view_binding"
+        android:id="@+id/tv_view_binding_not_applicable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:text="default text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_hello" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_hello_activity_without_view_binding" />
 
     <Button
-        android:id="@+id/button_move_to_next_screen"
+        android:id="@+id/button_press_me"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/move_to_next_screen"
+        android:text="@string/press_me"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_view_binding" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_view_binding_not_applicable" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

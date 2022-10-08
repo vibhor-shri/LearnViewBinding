@@ -1,5 +1,6 @@
 package com.example.learnviewbinding
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.learnviewbinding.databinding.SampleActivityBinding
@@ -14,6 +15,14 @@ class ViewBindingActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         setDataOnViews()
+        applyListener()
+    }
+
+    private fun applyListener() {
+        binding.buttonMoveToNextScreen.setOnClickListener {
+            val intent = Intent(this, ActivityWithoutViewBinding::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun setDataOnViews() {
