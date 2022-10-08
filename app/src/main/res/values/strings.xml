@@ -5,4 +5,7 @@
     <string name="press_me">Press Me!</string>
     <string name="move_to_next_screen">Move to next screen</string>
     <string name="default_text">default text</string>
+    <string name="two">TWO</string>
+    <string name="one">ONE</string>
+    <string name="move_to_fragment">Move to fragment</string>
 </resources>
