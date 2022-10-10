@@ -16,7 +16,10 @@ class SampleFragmentActivity : FragmentActivity() {
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction().apply {
-                add(binding.fragmentContainerView.id, FragmentOne()).commit()
+                add(binding.fragmentContainerViewOne.id, FragmentOne()).commit()
+            }
+            supportFragmentManager.beginTransaction().apply {
+                add(binding.fragmentContainerViewTwo.id, FragmentTwo()).commit()
             }
         }
     }
